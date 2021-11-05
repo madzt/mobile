@@ -38,7 +38,7 @@ color: #8F2B14;
 }
 
 #current { 
-   color: #df23d6; 
+   color: #050505; 
    font-size: 1.5em;
 
 }
@@ -75,23 +75,43 @@ h1{
     text-align: center;
     
 }
+h2{
+    text-align: center;
+    font-size: 30px;
+    color:#8F2B14;
+}
+h3{
+    text-align: center;
+    font-size: 20px;
+}
+h4{
+    text-align: center;
+    font-size: 15px;
+}
 
 body {
     background-color: #F7F7B0;
     
 
 }
-p {
+/*paragraph styling for home, italian, desserts, asian, american */
+.home p {
    text-align: center;
    margin-left: 1em;
    margin-right: 1em;
    font-size: 20px;
 }
-.food_list > li{
-    text-align: center;
-    font-size: 25px;
-    /* display: table;
-    margin: 0 auto; */
+.italian p{
+    margin-left: 10px;
+}
+.desserts p{
+    margin-left: 10px;
+}
+.asian p{
+    margin-left: 10px;
+}
+.desserts p{
+    margin-left: 10px;
 }
 .recipes {
     display: grid;
@@ -104,51 +124,88 @@ p {
     justify-self: center;
 
 } */
-.penne-vodka_img{
-    width: 80%;
+/*style images to take up full grid container */
+/*italian*/
+.penne-vodka_img >img, .bow-tie_img > img, .b_img > img{
+    width: 100%;
 }
-h2{
+
+/*desserts*/
+.mm_pretzel_img > img, .apple-pie_img >img, .cheesecake_img > img {
+    width: 100%;
+}
+
+/*asian*/
+.panang_img > img, .fried-rice_img > img, .sushi_img > img{
+    width: 100%;
+}
+/*american*/
+.spinach_img >img, .cheese_img >img, .wings_img >img{
+    width: 100%;
+}
+
+/*style list elements in each food items class to be centered */
+/*desserts*/
+.mm-pretzel-bites > ul, .apple-pie > ul, .cheesecake >ul{
     text-align: center;
-    font-size: 20px;
-    color:#8F2B14;
+    list-style-type: none;
 }
-h3{
+
+/*asian*/
+.panang-curry > ul, .friedrice >ul, .sushi >ul{
     text-align: center;
-    font-size: 15px;
+    list-style-type: none;
 }
+
+/*italian*/
 .bow-tie_text > ul{
     text-align: center;
     list-style-type: none;
 }
+
 .penne-vodka_text >ul{
     text-align: center;
     list-style-type: none;
 }
+
 .b_text >ul{
     text-align: center;
     list-style-type: none;
 }
-.bow-tie_text{
+/*american*/
+.wings >ul, .cheese >ul, .spinach >ul{
+    text-align: center;
+    list-style-type: none;
+}
+
+/*style the text and imgs of each food item to be in grid col 1*/
+/*italian*/
+.bow-tie_text, .bow-tie_img{
     grid-column: 1/2;
 }
-.bow-tie_img {
+
+/* .bow-tie_img {
     grid-column: 1/2;
 
-}
-.bow-tie_img > img {
-    width: 100%;
-}
-.b_img{
+} */
+.b_test, .b_img{
     grid-column: 1/2;
 }
-.b_img > img{
-    width: 100%;
-}
-.penne-vodka_img{
+
+.penne-vodka_img, .penne-vodka_text{
     grid-column: 1/2;
 }
-.penne-vodka_img > img{
-    width: 100%;
+/*asian*/
+.panang-curry, .panang_img, .sushi, .sushi_img, .fried-rice_img, .friedrice{
+    grid-column: 1/2;
+}
+/*american*/
+.wings, .wings_img, .spinach, .spinach_img, .cheese, .cheese_img{
+    grid-column: 1/2;
+}
+/*desserts*/
+.apple-pie, .apple-pie_img, .cheesecake, .cheesecake_img, .mm-pretzel-bites, .mm_pretzel_img{
+    grid-column:1/2;
 }
 
 .collage {
