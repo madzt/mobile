@@ -194,9 +194,9 @@ body {
 
 .collage {
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, auto);
-    /grid-row-gap: 20px; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1f;
+    grid-row-gap: 5px; 
     /* align-items: baseline; */
 }
 .collage img {
